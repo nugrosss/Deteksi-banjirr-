@@ -63,7 +63,7 @@ class VideoProcessor:
                     # Gambar bounding box pada frame asli
                     cv.rectangle(frame_resized, (x, y), (x + w, y + h), (0, 255, 0), 2)
                     # Tambahkan label area
-                    cv.putText(frame_resized, f'firos: {area}', (x, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                    cv.putText(frame_resized, f'Area: {area}', (x, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
                     # Perbaiki logika cetak status
                     if area < flood_threshold_low:
