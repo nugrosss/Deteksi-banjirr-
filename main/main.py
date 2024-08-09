@@ -56,8 +56,8 @@ class VideoProcessor:
                 area = cv.contourArea(cnt)
 
                 # Definisikan kepadatan piksel minimum dan ambang batas untuk status
-                flood_threshold_low = 200
-                flood_threshold_high = 500
+                flood_threshold_low = 200 #setpoinnn
+                flood_threshold_high = 500 #setpoinn 
 
                 if area > flood_threshold_low:
                     # Gambar bounding box pada frame asli
